@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview Image-->
         <scene sceneID="uey-p4-GCs">
             <objects>
-                <viewController id="UO7-6p-tOh" sceneMemberID="viewController">
+                <viewController id="UO7-6p-tOh" customClass="PreviewImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4N-JJ-77M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="112"/>
         </scene>
-        <!--View Controller-->
+        <!--Analyze Image-->
         <scene sceneID="lLy-9h-UiH">
             <objects>
-                <viewController id="Kfc-hn-CUc" sceneMemberID="viewController">
+                <viewController id="Kfc-hn-CUc" customClass="AnalyzeImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cjx-aO-mor">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
