@@ -17,6 +17,7 @@
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" id="qCn-O4-c06"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4yz-Vn-eUJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-6x-Rlt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,6 +31,16 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-PS-ciO">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="撮る"/>
+                                <connections>
+                                    <segue destination="UO7-6p-tOh" kind="show" id="Tyy-kX-U4e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,18 +48,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="113"/>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
         <!--Preview Image-->
         <scene sceneID="uey-p4-GCs">
             <objects>
                 <viewController id="UO7-6p-tOh" customClass="PreviewImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4N-JJ-77M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7DZ-l7-BJV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Wgn-aP-HrX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDe-r8-vaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,4 +97,7 @@
             <point key="canvasLocation" x="2699" y="112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qCn-O4-c06"/>
+    </inferredMetricsTieBreakers>
 </document>
