@@ -1,5 +1,5 @@
 //
-//  PreviewCSV.swift
+//  PreviewImage.swift
 //  TesseractForiPhone
 //
 //  Created by プログラム開発用パソコン02 on 2020/08/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreviewCSV: UIViewController {
+class PreviewImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,9 +13,10 @@
 		3276803224E5134500E3CFA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276803024E5134500E3CFA0 /* Main.storyboard */; };
 		3276803424E5134800E3CFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3276803324E5134800E3CFA0 /* Assets.xcassets */; };
 		3276803724E5134800E3CFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276803524E5134800E3CFA0 /* LaunchScreen.storyboard */; };
-		3276804724E51E1300E3CFA0 /* CaptureImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804624E51E1300E3CFA0 /* CaptureImage.swift */; };
-		3276804B24E5207B00E3CFA0 /* AnalyzeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804A24E5207B00E3CFA0 /* AnalyzeImage.swift */; };
-		3276804D24E5218400E3CFA0 /* PreviewCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804C24E5218400E3CFA0 /* PreviewCSV.swift */; };
+		3276804724E51E1300E3CFA0 /* CaptureImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804624E51E1300E3CFA0 /* CaptureImageViewController.swift */; };
+		3276804B24E5207B00E3CFA0 /* AnalyzeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804A24E5207B00E3CFA0 /* AnalyzeImageViewController.swift */; };
+		3276804D24E5218400E3CFA0 /* PreviewCSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804C24E5218400E3CFA0 /* PreviewCSVViewController.swift */; };
+		3276804F24E63C5300E3CFA0 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276804E24E63C5200E3CFA0 /* PreviewImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		3276803324E5134800E3CFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3276803624E5134800E3CFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3276803824E5134800E3CFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3276804624E51E1300E3CFA0 /* CaptureImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImage.swift; sourceTree = "<group>"; };
-		3276804A24E5207B00E3CFA0 /* AnalyzeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeImage.swift; sourceTree = "<group>"; };
-		3276804C24E5218400E3CFA0 /* PreviewCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCSV.swift; sourceTree = "<group>"; };
+		3276804624E51E1300E3CFA0 /* CaptureImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageViewController.swift; sourceTree = "<group>"; };
+		3276804A24E5207B00E3CFA0 /* AnalyzeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeImageViewController.swift; sourceTree = "<group>"; };
+		3276804C24E5218400E3CFA0 /* PreviewCSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCSVViewController.swift; sourceTree = "<group>"; };
+		3276804E24E63C5200E3CFA0 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,10 @@
 				3276802C24E5134500E3CFA0 /* SceneDelegate.swift */,
 				3276802E24E5134500E3CFA0 /* ViewController.swift */,
 				3276803024E5134500E3CFA0 /* Main.storyboard */,
-				3276804C24E5218400E3CFA0 /* PreviewCSV.swift */,
-				3276804A24E5207B00E3CFA0 /* AnalyzeImage.swift */,
-				3276804624E51E1300E3CFA0 /* CaptureImage.swift */,
+				3276804C24E5218400E3CFA0 /* PreviewCSVViewController.swift */,
+				3276804E24E63C5200E3CFA0 /* PreviewImageViewController.swift */,
+				3276804A24E5207B00E3CFA0 /* AnalyzeImageViewController.swift */,
+				3276804624E51E1300E3CFA0 /* CaptureImageViewController.swift */,
 				3276803324E5134800E3CFA0 /* Assets.xcassets */,
 				3276803524E5134800E3CFA0 /* LaunchScreen.storyboard */,
 				3276803824E5134800E3CFA0 /* Info.plist */,
@@ -147,12 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3276804724E51E1300E3CFA0 /* CaptureImage.swift in Sources */,
+				3276804724E51E1300E3CFA0 /* CaptureImageViewController.swift in Sources */,
 				3276802F24E5134500E3CFA0 /* ViewController.swift in Sources */,
+				3276804F24E63C5300E3CFA0 /* PreviewImageViewController.swift in Sources */,
 				3276802B24E5134500E3CFA0 /* AppDelegate.swift in Sources */,
-				3276804D24E5218400E3CFA0 /* PreviewCSV.swift in Sources */,
+				3276804D24E5218400E3CFA0 /* PreviewCSVViewController.swift in Sources */,
 				3276802D24E5134500E3CFA0 /* SceneDelegate.swift in Sources */,
-				3276804B24E5207B00E3CFA0 /* AnalyzeImage.swift in Sources */,
+				3276804B24E5207B00E3CFA0 /* AnalyzeImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

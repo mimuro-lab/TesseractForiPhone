@@ -1,5 +1,5 @@
 //
-//  PreviewImage.swift
+//  AnalyzeImage.swift
 //  TesseractForiPhone
 //
 //  Created by プログラム開発用パソコン02 on 2020/08/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreviewImage: UIViewController {
+class AnalyzeImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

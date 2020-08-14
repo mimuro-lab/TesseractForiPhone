@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-910" y="113"/>
         </scene>
-        <!--Capture Image-->
+        <!--Capture Image View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CaptureImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CaptureImageViewController" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
-        <!--Preview Image-->
+        <!--Preview Image View Controller-->
         <scene sceneID="uey-p4-GCs">
             <objects>
-                <viewController id="UO7-6p-tOh" customClass="PreviewImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UO7-6p-tOh" customClass="PreviewImageViewController" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4N-JJ-77M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="111.83035714285714"/>
         </scene>
-        <!--Analyze Image-->
+        <!--Analyze Image View Controller-->
         <scene sceneID="lLy-9h-UiH">
             <objects>
-                <viewController id="Kfc-hn-CUc" customClass="AnalyzeImage" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kfc-hn-CUc" customClass="AnalyzeImageViewController" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cjx-aO-mor">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1801" y="114"/>
         </scene>
-        <!--PreviewCSV-->
+        <!--PreviewCSV View Controller-->
         <scene sceneID="lVl-tH-9fY">
             <objects>
-                <viewController id="zyS-iS-Gxw" customClass="PreviewCSV" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zyS-iS-Gxw" customClass="PreviewCSVViewController" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfd-5c-z6Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,6 +147,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qCn-O4-c06"/>
+        <segue reference="Tyy-kX-U4e"/>
+        <segue reference="hr0-UM-agI"/>
     </inferredMetricsTieBreakers>
 </document>
