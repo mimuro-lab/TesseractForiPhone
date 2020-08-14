@@ -10,9 +10,8 @@
         <!--Navigation Controller-->
         <scene sceneID="H5V-qj-Nlo">
             <objects>
-                <navigationController id="NxK-T1-f9X" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="NxK-T1-f9X" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PUb-rF-6DM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -148,6 +147,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hr0-UM-agI"/>
+        <segue reference="qCn-O4-c06"/>
     </inferredMetricsTieBreakers>
 </document>
