@@ -101,6 +101,9 @@
                                 <rect key="frame" x="211" y="406" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="次のシーンへ"/>
+                                <connections>
+                                    <segue destination="zyS-iS-Gxw" kind="show" id="Asb-ml-swu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -117,11 +120,12 @@
             <objects>
                 <viewController id="zyS-iS-Gxw" customClass="PreviewCSV" customModule="TesseractForiPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfd-5c-z6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nFd-8T-zd4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PTA-qX-Er8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvB-sg-nbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
