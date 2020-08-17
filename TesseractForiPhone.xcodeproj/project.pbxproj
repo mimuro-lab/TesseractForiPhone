@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3271FF9A24E6726700588159 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3271FF9924E6726700588159 /* tessdata */; };
 		3276802B24E5134500E3CFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276802A24E5134500E3CFA0 /* AppDelegate.swift */; };
 		3276802D24E5134500E3CFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276802C24E5134500E3CFA0 /* SceneDelegate.swift */; };
 		3276802F24E5134500E3CFA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276802E24E5134500E3CFA0 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3271FF9924E6726700588159 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		3276802724E5134500E3CFA0 /* TesseractForiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesseractForiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3276802A24E5134500E3CFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3276802C24E5134500E3CFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		3276802924E5134500E3CFA0 /* TesseractForiPhone */ = {
 			isa = PBXGroup;
 			children = (
+				3271FF9924E6726700588159 /* tessdata */,
 				3276802A24E5134500E3CFA0 /* AppDelegate.swift */,
 				3276802C24E5134500E3CFA0 /* SceneDelegate.swift */,
 				3276802E24E5134500E3CFA0 /* ViewController.swift */,
@@ -92,7 +95,6 @@
 				FC1EBC4042BEE9ED72DCC381 /* Pods-TesseractForiPhone.debug.xcconfig */,
 				3B1516DEC6BB8286BC1320A6 /* Pods-TesseractForiPhone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3276803724E5134800E3CFA0 /* LaunchScreen.storyboard in Resources */,
+				3271FF9A24E6726700588159 /* tessdata in Resources */,
 				3276803424E5134800E3CFA0 /* Assets.xcassets in Resources */,
 				3276803224E5134500E3CFA0 /* Main.storyboard in Resources */,
 			);
