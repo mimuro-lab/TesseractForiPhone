@@ -9,11 +9,16 @@
 import UIKit
 
 class PreviewCSVViewController: UIViewController {
-
+    
+    // AnalyzeImage画面から受け取った、結果を保存するCSVファイルのパスを格納しておくための変数
+    var resultOfAnlyze = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        print("AnalyzeImageViewControllerから受け取ったパスは、、、",resultOfAnlyze)
+        
     }
     
 

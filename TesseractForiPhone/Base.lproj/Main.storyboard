@@ -101,7 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="次のシーンへ"/>
                                 <connections>
-                                    <segue destination="zyS-iS-Gxw" kind="show" id="Asb-ml-swu"/>
+                                    <segue destination="zyS-iS-Gxw" kind="show" identifier="toPreviewCSV" id="Asb-ml-swu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,7 +147,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tyy-kX-U4e"/>
+        <segue reference="Asb-ml-swu"/>
         <segue reference="hr0-UM-agI"/>
     </inferredMetricsTieBreakers>
 </document>

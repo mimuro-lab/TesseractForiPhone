@@ -13,6 +13,8 @@ class AnalyzeImageViewController: UIViewController {
 
     let swiftyTesseract = SwiftyTesseract(language: .japanese)
 
+    // 出力結果を保存しておくCSVファイルのパス（PreviewCSV画面へ渡す変数）
+    var resultOfAnalyze: String = "none"
 
      override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +24,19 @@ class AnalyzeImageViewController: UIViewController {
 
         swiftyTesseract.performOCR(on: image) { recognizedString in
             guard let text = recognizedString else { return }
-            print("\(text)")
-
+            //print("\(text)")
+        }
+        
+        print("AnalyzeImageViewControllerから渡す変数は、、、", resultOfAnalyze)
+        
+    }
+    
+    // PreviewCSV画面へ変数を渡すための関数
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toPreviewCSV"{
+            let nextView = segue.destination as! PreviewCSVViewController
+            nextView.resultOfAnlyze = resultOfAnalyze
         }
     }
+    
 }
