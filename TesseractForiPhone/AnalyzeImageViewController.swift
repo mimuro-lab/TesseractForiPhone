@@ -29,6 +29,18 @@ class AnalyzeImageViewController: UIViewController {
         
         print("AnalyzeImageViewControllerから渡す変数は、、、", resultOfAnalyze)
         
+        //　結果を格納しておくresultOfAnalyzeの中身を読み取る（後で消す）
+        // resultOfAnalyze.csvのパスを指定。
+        guard let fileURL = Bundle.main.url(forResource: "resultOfAnalyze", withExtension: "csv")  else {
+            fatalError("ファイルが見つからない")
+        }
+         
+        // 中身を読み取る
+        guard let fileContents = try? String(contentsOf: fileURL) else {
+            fatalError("ファイル読み込みエラー")
+        }
+        
+        print(fileContents)
     }
     
     // PreviewCSV画面へ変数を渡すための関数
