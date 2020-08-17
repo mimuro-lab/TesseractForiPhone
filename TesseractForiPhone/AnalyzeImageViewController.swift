@@ -7,24 +7,23 @@
 //
 
 import UIKit
+import SwiftyTesseract
 
 class AnalyzeImageViewController: UIViewController {
 
-    override func viewDidLoad() {
+    let swiftyTesseract = SwiftyTesseract(language: .japanese)
+
+
+     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let fileName = "sample.png"
+        guard let image = UIImage(named: fileName) else { return }
 
-        // Do any additional setup after loading the view.
+        swiftyTesseract.performOCR(on: image) { recognizedString in
+            guard let text = recognizedString else { return }
+            print("\(text)")
+
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
