@@ -15,7 +15,7 @@ class AnalyzeImageViewController: UIViewController {
     let swiftyTesseract = SwiftyTesseract(language: .japanese)
 
     // 出力結果を保存しておくCSVファイルのパス（PreviewCSV画面へ渡す変数）
-    var resultOfAnalyze: String = "none"
+    var resultOfCSVPath: String = "none"
 
      override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,29 +31,23 @@ class AnalyzeImageViewController: UIViewController {
             resultOfContent = text
         }
         
-        print("AnalyzeImageViewControllerから渡す変数は、、、", resultOfAnalyze)
-        
-        //　結果を格納しておくresultOfAnalyzeの中身を読み取る（後で消す）
-        // resultOfAnalyze.csvのパスを指定。
-        //guard let fileURL = Bundle.main.url(forResource: "resultOfAnalyze", withExtension: "csv")  else {
-          //  fatalError("ファイルが見つからない")
-        //}
-         
-        // 中身を読み取る
-        //guard let fileContents = try? String(contentsOf: fileURL) else {
-            //fatalError("ファイル読み込みエラー")
-        //}
-        
-        // ファイルへ文字列を書き込む
+        // 書き込むCSVファイルの名前
         let filename = "resultOfAnalyze.csv"
+        resultOfCSVPath = filename
+        
+        print("AnalyzeImageViewControllerから渡す変数は、、、", resultOfCSVPath)
+        
+        // 読み込んだ内容を格納する変数
         var content = ""
+        // CSVファイルを作り、認識結果を書き込む。
         createFile(makeFileName: filename, writingText: resultOfContent)
+        // filenameの内容を読みとり、変数:contentに代入する
         content = readFile(readFilename: filename)
-        print("認識結果を書き込みました。",content)
+        print("認識結果を、", resultOfCSVPath ,"に書き込みました。",content)
         
     }
     
-    
+    // "makeFileName"の名前のファイルをデバイス上に作り、"writeingText"の内容を書き込む。
     func createFile(makeFileName:String, writingText:String) {
          
         // 作成するテキストファイルの名前
@@ -75,7 +69,8 @@ class AnalyzeImageViewController: UIViewController {
             }
         }
     }
-
+    
+    // デバイス上の"readFilename"のファイルの内容を読み取り、内容を文字列型で返す。
     func readFile(readFilename:String)->String{
         var contentOfFile = ""
         if let documentDirectoryFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last{
@@ -99,7 +94,7 @@ class AnalyzeImageViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "toPreviewCSV"{
             let nextView = segue.destination as! PreviewCSVViewController
-            nextView.resultOfAnlyze = resultOfAnalyze
+            nextView.resultOfCSVPath = resultOfCSVPath
         }
     }
     

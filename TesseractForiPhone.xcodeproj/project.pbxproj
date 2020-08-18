@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3271001124EA60D400588159 /* resultOfAnalyze.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3271001024EA60D400588159 /* resultOfAnalyze.csv */; };
 		3271FF9A24E6726700588159 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3271FF9924E6726700588159 /* tessdata */; };
 		3276802B24E5134500E3CFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276802A24E5134500E3CFA0 /* AppDelegate.swift */; };
 		3276802D24E5134500E3CFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276802C24E5134500E3CFA0 /* SceneDelegate.swift */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3271001024EA60D400588159 /* resultOfAnalyze.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resultOfAnalyze.csv; sourceTree = "<group>"; };
 		3271FF9924E6726700588159 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		3276802724E5134500E3CFA0 /* TesseractForiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesseractForiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3276802A24E5134500E3CFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				3276803024E5134500E3CFA0 /* Main.storyboard */,
 				3276804C24E5218400E3CFA0 /* PreviewCSVViewController.swift */,
 				3276804E24E63C5200E3CFA0 /* PreviewImageViewController.swift */,
-				3271001024EA60D400588159 /* resultOfAnalyze.csv */,
 				3276804A24E5207B00E3CFA0 /* AnalyzeImageViewController.swift */,
 				3276804624E51E1300E3CFA0 /* CaptureImageViewController.swift */,
 				3276803324E5134800E3CFA0 /* Assets.xcassets */,
@@ -171,7 +168,6 @@
 			files = (
 				3276803724E5134800E3CFA0 /* LaunchScreen.storyboard in Resources */,
 				3271FF9A24E6726700588159 /* tessdata in Resources */,
-				3271001124EA60D400588159 /* resultOfAnalyze.csv in Resources */,
 				3276803424E5134800E3CFA0 /* Assets.xcassets in Resources */,
 				3276803224E5134500E3CFA0 /* Main.storyboard in Resources */,
 			);
