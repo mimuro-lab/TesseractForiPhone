@@ -51,20 +51,16 @@ class AnalyzeImageViewController: UIViewController {
     // "makeFileName"の名前のファイルをデバイス上に作り、"writeingText"の内容を書き込む。
     func createFile(makeFileName:String, writingText:String) {
          
-        // 作成するテキストファイルの名前
-        let textFileName = makeFileName
-        let initialText = writingText
-         
         // DocumentディレクトリのfileURLを取得
         if let documentDirectoryFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
          
             // ディレクトリのパスにファイル名をつなげてファイルのフルパスを作る
-            let targetTextFilePath = documentDirectoryFileURL.appendingPathComponent(textFileName)
+            let targetTextFilePath = documentDirectoryFileURL.appendingPathComponent(makeFileName)
              
             //print("書き込むファイルのパス: \(targetTextFilePath)")
             
             do {
-                try initialText.write(to: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
+                try writingText.write(to: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
             } catch let error as NSError {
                 print("failed to write: \(error)")
             }
