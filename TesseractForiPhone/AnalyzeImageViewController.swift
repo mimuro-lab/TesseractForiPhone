@@ -38,11 +38,12 @@ class AnalyzeImageViewController: UIViewController {
         print("AnalyzeImageViewControllerから渡す変数は、、、", resultOfCSVPath)
         
         // 読み込んだ内容を格納する変数
-        var content = ""
         // CSVファイルを作り、認識結果を書き込む。
         createFile(makeFileName: filename, writingText: resultOfContent)
         // filenameの内容を読みとり、変数:contentに代入する
-        content = readFile(readFilename: filename)
+        guard let content = readFile(readFilename: filename) else{
+            return
+        }
         print("認識結果を、", resultOfCSVPath ,"に書き込みました。",content)
         
     }
