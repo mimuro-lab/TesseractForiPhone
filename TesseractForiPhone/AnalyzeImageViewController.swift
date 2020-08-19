@@ -71,23 +71,31 @@ class AnalyzeImageViewController: UIViewController {
     }
     
     // デバイス上の"readFilename"のファイルの内容を読み取り、内容を文字列型で返す。
-    func readFile(readFilename:String)->String{
-        var contentOfFile = ""
-        if let documentDirectoryFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last{
-            // ディレクトリのパスにファイル名をつなげてファイルのフルパスを作る
-            let targetTextFilePath = documentDirectoryFileURL.appendingPathComponent(readFilename)
-             
-            //print("書き込むファイルのパス: \(targetTextFilePath)")
-            //writedFilePath = targetTextFilePath.absoluteString
-            
-            do {
-                //try initialText.write(to: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
-                contentOfFile = try String(contentsOf: targetTextFilePath, encoding: .utf8)
-            } catch let error as NSError {
-                print("failed to write: \(error)")
-            }
+    func readFile(readFilename:String)->String?{
+        
+        // ファイルパスを取得する
+        guard let documentDirectoryFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
+            else {
+            // ファイルパスが見つからなかったら、nilを返す
+            print("")
+            return nil
         }
-        return contentOfFile
+        
+        // ディレクトリのパスにファイル名をつなげてファイルのフルパスを作る
+        let targetTextFilePath = documentDirectoryFileURL.appendingPathComponent(readFilename)
+         
+        //print("書き込むファイルのパス: \(targetTextFilePath)")
+        //writedFilePath = targetTextFilePath.absoluteString
+
+        do {
+            //try initialText.write(to: targetTextFilePath, atomically: true, encoding: String.Encoding.utf8)
+            // ファイルの中身が読み取れたら、内容をリターンする
+            return  try String(contentsOf: targetTextFilePath, encoding: .utf8)
+        } catch let error as NSError {
+            // ファイルの中身が読み取れなかったら、nilを返す
+            print("failed to read \(error)")
+            return nil
+        }
     }
     
     // PreviewCSV画面へ変数を渡すための関数
