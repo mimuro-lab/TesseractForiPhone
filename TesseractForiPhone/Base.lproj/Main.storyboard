@@ -122,24 +122,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsD-8m-c0d">
-                                <rect key="frame" x="144" y="406" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="　終了　"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="hr0-UM-agI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4f-3r-nIY">
-                                <rect key="frame" x="208" y="406" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="　共有　"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-Cc-yO5">
+                                <rect key="frame" x="87" y="714" width="240" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4f-3r-nIY">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0Ow-V4-y2Z"/>
+                                        </constraints>
+                                        <state key="normal" title="　共有　"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsD-8m-c0d">
+                                        <rect key="frame" x="121.5" y="0.0" width="118.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rfU-uI-CyC"/>
+                                        </constraints>
+                                        <state key="normal" title="　終了　"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="hr0-UM-agI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J4W-io-g69">
+                                <rect key="frame" x="87" y="354" width="240" height="310"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z4A-Cc-yO5" firstAttribute="top" secondItem="J4W-io-g69" secondAttribute="bottom" constant="50" id="4BG-Iz-owr"/>
+                            <constraint firstItem="J4W-io-g69" firstAttribute="top" secondItem="nFd-8T-zd4" secondAttribute="top" constant="354" id="6rc-Jw-e9l"/>
+                            <constraint firstItem="nFd-8T-zd4" firstAttribute="bottom" secondItem="Z4A-Cc-yO5" secondAttribute="bottom" constant="50" id="JYi-4d-FdW"/>
+                            <constraint firstItem="J4W-io-g69" firstAttribute="leading" secondItem="nFd-8T-zd4" secondAttribute="leading" constant="87" id="LPZ-xs-1Cs"/>
+                            <constraint firstItem="nFd-8T-zd4" firstAttribute="trailing" secondItem="J4W-io-g69" secondAttribute="trailing" constant="87" id="O8e-9E-Fk9"/>
+                            <constraint firstItem="J4W-io-g69" firstAttribute="leading" secondItem="nFd-8T-zd4" secondAttribute="leading" constant="87" id="WuV-Wr-2RE"/>
+                            <constraint firstItem="nFd-8T-zd4" firstAttribute="trailing" secondItem="Z4A-Cc-yO5" secondAttribute="trailing" constant="87" id="fu3-zx-KK5"/>
+                            <constraint firstItem="nFd-8T-zd4" firstAttribute="trailing" secondItem="J4W-io-g69" secondAttribute="trailing" constant="87" id="hhU-sE-yV7"/>
+                            <constraint firstItem="J4W-io-g69" firstAttribute="top" secondItem="nFd-8T-zd4" secondAttribute="top" constant="354" id="msj-Qi-52w"/>
+                            <constraint firstItem="Z4A-Cc-yO5" firstAttribute="leading" secondItem="nFd-8T-zd4" secondAttribute="leading" constant="87" id="nWa-GJ-EkH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nFd-8T-zd4"/>
                     </view>
                     <navigationItem key="navigationItem" id="PTA-qX-Er8"/>
+                    <connections>
+                        <outlet property="showText" destination="J4W-io-g69" id="Ydt-6g-hwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvB-sg-nbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +179,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Asb-ml-swu"/>
         <segue reference="hr0-UM-agI"/>
     </inferredMetricsTieBreakers>
 </document>
