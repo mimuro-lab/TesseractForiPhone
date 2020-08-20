@@ -13,6 +13,7 @@ class PreviewCSVViewController: UIViewController {
     // AnalyzeImage画面から受け取った、結果を保存するCSVファイルのパスを格納しておくための変数
     var resultOfCSVPath = ""
     
+    @IBOutlet weak var showText: UITextView!
     
     //@IBOutlet weak var drawResultLabel: UILabel!
     
@@ -23,10 +24,11 @@ class PreviewCSVViewController: UIViewController {
         
         print("AnalyzeImageViewControllerから受け取ったパスは、、、",resultOfCSVPath)
         
-        print("そのファイルの中身は、、、", readFile(readFilename: resultOfCSVPath))
+        let content = readFile(readFilename: resultOfCSVPath)
+        print("そのファイルの中身は、、、", content)
         
         //drawResultLabel.text = readFile(readFilename: resultOfCSVPath)
-        
+        showText.text = content
         
     }
     
